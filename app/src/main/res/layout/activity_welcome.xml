@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/tv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/bot_amico" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_image"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/jost_bold"
+        android:text="Welcome!"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_lets_have_fun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_name"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/jost_bold"
+        android:letterSpacing="0.05"
+        android:lineHeight="40sp"
+        android:text="Let's Have Fun with Bobo!"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_start_conversation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_lets_have_fun"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/jost_bold"
+        android:letterSpacing="0.05"
+        android:lineHeight="40sp"
+        android:text="Start a conversation with Bobo right now!"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/primaryColor"
+        android:fontFamily="@font/jost_bold"
+        android:onClick="onGetStartedButtonClick"
+        android:text="Start Chat with Bobo"
+        android:textSize="18sp" />
+
+</RelativeLayout>
