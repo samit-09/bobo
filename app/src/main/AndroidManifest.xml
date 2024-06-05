@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <!-- Permissions for network access -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Gallery storage permissions -->
@@ -20,16 +21,22 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.Bobo"
         tools:targetApi="34">
+
         <activity
             android:name=".activity.WelcomeActivity"
             android:exported="false" />
-        <!-- MainActivity definition, exported set to false -->
+        <!-- WelcomeActivity definition, exported set to false -->
+
         <activity
             android:name=".activity.FillProfileActivity"
-            android:exported="false" /> <!-- HomeActivity definition, exported set to false -->
+            android:exported="false" />
+        <!-- FillProfileActivity definition, exported set to false -->
+
         <activity
             android:name=".activity.HomeActivity"
-            android:exported="false" /> <!-- FillProfileActivity definition, exported set to true, with intent filter -->
+            android:exported="false" />
+        <!-- HomeActivity definition, exported set to false -->
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

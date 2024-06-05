@@ -22,7 +22,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/jost_bold"
         android:letterSpacing="0.05"
-        android:lineHeight="40sp"
+        android:lineHeight="35dp"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="30sp" />
@@ -37,11 +37,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="9dp"
         android:backgroundTint="@color/primaryColor"
         android:fontFamily="@font/jost_bold"
         android:onClick="onGetStartedButtonClick"
         android:text="Get Started"
         android:textSize="18sp"
-        android:visibility="gone" />
+        android:visibility="visible" />
 
 </RelativeLayout>

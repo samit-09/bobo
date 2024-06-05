@@ -39,18 +39,22 @@ dependencies {
     androidTestImplementation libs.espresso.core
 
 
+    // Dependency for CircleImageView library
     implementation libs.circleimageview
+
+    // Dependency for DotsIndicator library
     implementation(libs.dotsindicator)
+
+   // Dependency for Lottie animation library
     implementation libs.lottie
 
-
-    // add the dependency for the Google AI client SDK for Android
+   // Add the dependency for the Google AI client SDK for Android
     implementation(libs.generativeai)
 
-    // Required for one-shot operations (to use `ListenableFuture` from Guava Android)
+   // Required for one-shot operations (to use `ListenableFuture` from Guava Android)
     implementation(libs.guava)
 
-    // Required for streaming operations (to use `Publisher` from Reactive Streams)
+   // Required for streaming operations (to use `Publisher` from Reactive Streams)
     implementation(libs.reactive.streams)
 
 

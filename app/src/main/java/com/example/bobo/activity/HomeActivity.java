@@ -3,6 +3,7 @@ package com.example.bobo.activity;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.bobo.R;
@@ -12,6 +13,7 @@ import com.example.bobo.fragment.FavoriteFragment;
 import com.example.bobo.fragment.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.view.MenuItem;
+import android.view.View;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -21,6 +23,8 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        setLightStatusBar();
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -49,6 +53,12 @@ public class HomeActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             bottomNavigationView.setSelectedItemId(R.id.navigation_chat);
         }
+    }
+    // Method to set the status bar for light theme
+    private void setLightStatusBar() {
+        // Set system UI visibility and status bar color for light theme
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.white));
     }
 
     private void loadFragment(Fragment fragment) {

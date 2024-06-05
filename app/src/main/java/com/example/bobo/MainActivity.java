@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         nextButton = findViewById(R.id.nextButton);
         dotsIndicator = findViewById(R.id.dotsIndicator);
 
-        int[] images = {R.drawable.robot_face, R.drawable.bot_amico, R.drawable.chat_bot};
+        int[] images = {R.drawable.innovation_pana, R.drawable.bot_amico, R.drawable.chat_bot};
         String[] titles = {"Welcome To Bobo,\na great friend to\nchat with you", "If you are confused\nabout what to do,\njust open Bobo", "Bobo will be ready\nto chat and make\nyou happy"};
 
         adapter = new OnboardingAdapter(images, titles);

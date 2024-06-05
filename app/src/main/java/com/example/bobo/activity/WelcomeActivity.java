@@ -29,6 +29,7 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_welcome);
+
         setLightStatusBar();
 
         profileNameTextView = findViewById(R.id.profile_name);

@@ -70,15 +70,7 @@ public class ChatFragment extends Fragment {
             }
         });
 
-        setLightStatusBar();
-
         return view;
-    }
-
-    private void setLightStatusBar() {
-        // Set system UI visibility and status bar color for light theme
-        requireActivity().getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        requireActivity().getWindow().setStatusBarColor(ContextCompat.getColor(requireContext(), R.color.white));
     }
 
     private void sendMessage() {
