@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "585915953937",
+    "project_id": "bobo-chatbot",
+    "storage_bucket": "bobo-chatbot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585915953937:android:68cd7c789ab6583dbe12b0",
+        "android_client_info": {
+          "package_name": "com.t09app.bobo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyTMcZ1X8IOPlBJuuxA_Ohiq-aYSXDrCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

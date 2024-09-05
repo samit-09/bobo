@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:padding="16dp">
+    android:background="?attr/backgroundColor"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
 
+
+    <!-- ImageView for the slide image -->
     <ImageView
         android:id="@+id/slide_image"
         android:layout_width="wrap_content"
-        android:layout_height="400dp"
+        android:layout_height="350dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/bot_amico" />
 
+    <!-- TextView for the slide title -->
     <TextView
         android:id="@+id/slide_title"
         android:layout_width="wrap_content"
@@ -24,10 +30,11 @@
         android:letterSpacing="0.05"
         android:lineHeight="35dp"
         android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="30sp" />
+        android:textColor="?attr/textColor"
+        android:textSize="22sp" />
 
 
+    <!-- Button for "Get Started" -->
     <Button
         android:id="@+id/getStartedButton"
         android:layout_width="match_parent"
@@ -37,12 +44,13 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginBottom="90dp"
         android:backgroundTint="@color/primaryColor"
         android:fontFamily="@font/jost_bold"
         android:onClick="onGetStartedButtonClick"
-        android:text="Get Started"
+        android:text="@string/get_started"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:visibility="visible" />
 
-</RelativeLayout>
+</LinearLayout>

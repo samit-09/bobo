@@ -1,13 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
+    id 'com.google.gms.google-services'
 }
 
 android {
-    namespace 'com.example.bobo'
+    namespace 'com.t09app.bobo'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.bobo"
+        applicationId "com.t09app.bobo"
         minSdk 25
         targetSdk 34
         versionCode 1
@@ -38,24 +39,37 @@ dependencies {
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
 
-
     // Dependency for CircleImageView library
     implementation libs.circleimageview
 
     // Dependency for DotsIndicator library
     implementation(libs.dotsindicator)
 
-   // Dependency for Lottie animation library
+    // Dependency for Lottie animation library
     implementation libs.lottie
 
-   // Add the dependency for the Google AI client SDK for Android
+    // Add the dependency for the Google AI client SDK for Android
     implementation(libs.generativeai)
 
-   // Required for one-shot operations (to use `ListenableFuture` from Guava Android)
+    // Required for one-shot operations (to use `ListenableFuture` from Guava Android)
     implementation(libs.guava)
 
-   // Required for streaming operations (to use `Publisher` from Reactive Streams)
+    // Required for streaming operations (to use `Publisher` from Reactive Streams)
     implementation(libs.reactive.streams)
+
+    implementation libs.play.services.ads
+
+    //GIF VIEWER
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
+
+    implementation project(':nativetemplates')
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:33.2.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-auth'
 
 
 }

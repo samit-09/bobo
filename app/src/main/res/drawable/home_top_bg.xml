@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Define the corner radius -->
+    <corners android:bottomRightRadius="36dp" android:bottomLeftRadius="36dp"/>
+
+    <!-- Define the solid color -->
+    <solid android:color="@color/primaryColor"/>
+
+</shape>

@@ -3,17 +3,15 @@
     <item
         android:id="@+id/navigation_chat"
         android:icon="@drawable/chat_unselected"
-        android:title="Chat" />
+        android:title="New Chat" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/history_unselected"
+        android:title="Chats" />
+
     <item
         android:id="@+id/navigation_category"
         android:icon="@drawable/category_unselected"
         android:title="Category" />
-    <item
-        android:id="@+id/navigation_favorite"
-        android:icon="@drawable/favorite_unselected"
-        android:title="Favorite" />
-    <item
-        android:id="@+id/navigation_profile"
-        android:icon="@drawable/profile_unselected"
-        android:title="Profile" />
 </menu>

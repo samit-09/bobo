@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@android:color/white">
+    android:background="?attr/backgroundColor">
 
+    <!-- LottieAnimationView for displaying animations -->
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation_view"
         android:layout_width="wrap_content"
@@ -16,21 +17,28 @@
         app:lottie_autoPlay="true"
         app:lottie_loop="false"
         app:lottie_rawRes="@raw/congratulations"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        />
+    <!-- Ensure the LottieAnimationView dependency is included in your build.gradle
+         Also, ensure you have the animation resource @raw/congratulations -->
 
+    <!-- TextView for the dialog title -->
     <TextView
         android:id="@+id/dialog_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/jost_bold"
         android:gravity="center"
-        android:text="Congratulations!"
+        android:text="@string/congratulations"
+        android:textColor="?attr/textColor"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/animation_view" />
+    <!-- Ensure @font/jost_bold and @string/congratulations are defined in your resources -->
 
+    <!-- TextView for the dialog message -->
     <TextView
         android:id="@+id/dialog_message"
         android:layout_width="0dp"
@@ -41,11 +49,13 @@
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/jost_bold"
         android:gravity="center"
-        android:text="Your account is ready to use. You will be redirected to the Home page in a few seconds."
+        android:text="@string/your_account_is_ready_to_use_you_will_be_redirected_to_the_home_page_in_a_few_seconds"
+        android:textColor="?attr/textColor"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dialog_title" />
+    <!-- Ensure @string/your_account_is_ready_to_use_you_will_be_redirected_to_the_home_page_in_a_few_seconds is defined in your resources -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
